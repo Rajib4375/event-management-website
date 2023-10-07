@@ -1,45 +1,46 @@
 [
     {
       "id": "1",
-      "image": "https://i.ibb.co/JjJbDQW/527983-shutterstock-349512905-603140.jpg",
-      "title": "Ways to embrace diversity in chemistry teaching",
-      "description":"Embracing diversity in chemistry teaching is crucial for creating an inclusive and equitable learning environment. .",
+      "image": "https://i.ibb.co/4Z0qjcw/female-african-american-speaker-giving-presentation-hall-university-workshop.jpg",
+      "title": "Learning Solutions Conference & Expo",
+      "description":"This conference, organized by The eLearning Guild, focuses on e-learning and instructional design. It offers practical solutions and strategies for creating effective online learning experiences.",
       "price": 799.99  
     },
     {
         "id": "2",
-        "image": "https://i.ibb.co/1ZrLH7g/2nd-picture.jpg",
-        "title": "Out and about science",
-        "description":"Out and about science typically refers to engaging in scientific activities or explorations outside of a traditional classroom or laboratory setting. It's a hands-on approach to learning and experiencing science in the natural world.",
-        "price": 500.99
+      "image": "https://i.ibb.co/JjJbDQW/527983-shutterstock-349512905-603140.jpg",
+      "title": "International Conference on Education",
+      "description":" ICED is an international conference that brings together educators, researchers, and policymakers to discuss current trends and research in education. Topics range from pedagogy to curriculum development",
+      "price": 799.99  
+        
     },
     {
         "id": "3",
-        "image": "https://i.ibb.co/mBbRBXn/Rectangle-4287.png",
-        "title": "Used Clothing Drive",
-        "description":"In summary, clothing is an integral part of human life, serving functional, cultural, and expressive purposes. It encompasses a wide range of styles, materials, and designs, making it a dynamic and evolving aspect of human culture and identity.",
+        "image": "https://i.ibb.co/NtVqqmZ/1000-F-631655706-Het-WIBEcub-Tqd5-BT1y-EUp-HGV1q-BNVTzf.jpg",
+        "title": "Harvard Institutes for Higher Education",
+        "description":"These institutes, offered by Harvard University, provide professional development for higher education administrators and faculty. Topics include leadership, teaching and learning, and institutional management.",
         "price": 800.99
 
     },
     {
         "id": "4",
-        "image": "https://i.ibb.co/kcpGQ6Y/Rectangle-4287-2.png",
-        "title": "Better Food for Everyone",
-        "description":"Better Food for Everyone represents a noble and aspirational goal related to improving the quality of food and the overall food system for the benefit of individuals and society as a whole..",
+        "image": "https://i.ibb.co/Bj3JZJS/1000-F-628948326-0s7j-Ixr1-Xx-JIe-Dbf1v-Uvo-Epr-Tlyk-Kgq6.jpg",
+        "title": "Online Learning Consortium Accelerate",
+        "description":"OLC Accelerate is an annual conference focused on online and digital learning in higher education. It explores online teaching and learning strategies, technology integration, and best practices.",
         "price": 350.99
     },
     {
         "id": "5",
-        "image": "https://i.ibb.co/kcpGQ6Y/Rectangle-4287-2.png",
-        "title": "Better Food for Everyone",
-        "description":"Better Food for Everyone represents a noble and aspirational goal related to improving the quality of food and the overall food system for the benefit of individuals and society as a whole..",
+        "image": "https://i.ibb.co/Qc5sZF3/1000-F-243253021-AGUv7-HGSed0-LH4n7jw-THgqby-War-Bvopw.jpg",
+        "title": "Teach For All Global Conference",
+        "description":"Teach For All's conference gathers educators, advocates, and leaders from around the world to discuss educational equity and innovations in teaching and leadership.",
         "price": 350.99
     },
     {
         "id": "6",
-        "image": "https://i.ibb.co/mBbRBXn/Rectangle-4287.png",
-        "title": "Used Clothing Drive",
-        "description":"In summary, clothing is an integral part of human life, serving functional, cultural, and expressive purposes. It encompasses a wide range of styles, materials, and designs, making it a dynamic and evolving aspect of human culture and identity.",
+        "image": "https://i.ibb.co/5ck112j/1000-F-243252538-DZWK8s92-Mxo-Zr-OA4g53-Mymds8f-Xy-SOHW.jpg",
+        "title": "EdSurge Fusion Conference",
+        "description":"he EdSurge Fusion Conference brings together educators, administrators, and edtech innovators to discuss the latest trends and challenges in education technology.",
         "price": 800.99
         
     }
