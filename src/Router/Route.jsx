@@ -14,7 +14,8 @@ const myCreatedRoute = createBrowserRouter([
         children:[
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=>fetch('/event.json')
             },
             {
                 path: "/course details",
