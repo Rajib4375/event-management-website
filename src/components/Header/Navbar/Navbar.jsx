@@ -19,16 +19,7 @@ const Navbar = () => {
                        </NavLink>
                      </li>
 
-                     <li>
-                    <NavLink
-                      to="/course details"
-                       className={({ isActive, isPending }) =>
-                      isPending ? "pending" : isActive ? "text-green-400 underline" : ""
-                         }
-                      >
-                      Course Details
-                       </NavLink>
-                     </li>
+                    
 
                      <li>
                     <NavLink
@@ -38,6 +29,17 @@ const Navbar = () => {
                          }
                       >
                       About
+                       </NavLink>
+                     </li>
+
+                     <li>
+                    <NavLink
+                      to="/register"
+                       className={({ isActive, isPending }) =>
+                      isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                         }
+                      >
+                      Register
                        </NavLink>
                      </li>
 
