@@ -1,12 +1,14 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import swal from "sweetalert";
 
 
 const Register = () => {
 
     const {createUser} = useContext(AuthContext);
     const [error, setError] = useState("");
+    
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -16,38 +18,41 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(name,email, password);
+        setError('')
+        
         
 
         // create user
         createUser(email, password)
         .then(result =>{
             console.log(result.user)
+            swal("Good job!", "You Register Successfull!", "success");
+           
+
         })
         .catch(error =>{
-            console.log(error)
+            console.log(error);
+            swal("Error!", "Try Again", "Error")
+
         });
 
         // password validation
-        if(!/"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"/.test(password)){
-          setError('Minimum six characters, at least one letter, one number and one special character')
-          return;
+        if(!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)){
+          setError('Minimum Six characters, at least one uppercase letter, one lowercase letter, one number and one special character')
         }
-        else{
-          setError("")
-        }
-
         
           
-      
-       
        };
 
     return (
         <div>
             <h2 className="text-3xl my-5 font-bold text-center">Register your account</h2>
+
             {
-              error ? <p className="text-center text-red-400">{error}</p> : ""
+              error && <p className="text-center text-red-400">{error}</p>
             }
+            
+
             
             <form onSubmit={handleRegister} className="md:w-3/4 lg:w-1/2 mx-auto">
         <div className="form-control">
