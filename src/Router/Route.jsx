@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Event from "../Pages/Event/Event";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -37,7 +38,7 @@ const myCreatedRoute = createBrowserRouter([
             },
             {
                 path:"/events/:id",
-                element:<Event></Event>,
+                element:<PrivateRoute><Event></Event></PrivateRoute>,
                 loader:()=>fetch('/event.json')
             }
         ]

@@ -1,18 +1,54 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Register = () => {
 
+    const {createUser} = useContext(AuthContext);
+    const [error, setError] = useState("");
+
     const handleRegister = e =>{
         e.preventDefault();
-        console.log(e.currentTarget)
+        console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        console.log(form.get('email'))
-       }
+        const name = form.get('name');
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(name,email, password);
+        
+
+        // create user
+        createUser(email, password)
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error =>{
+            console.log(error)
+        });
+
+        // password validation
+        if(!/"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"/.test(password)){
+          setError('Minimum six characters, at least one letter, one number and one special character')
+          return;
+        }
+        else{
+          setError("")
+        }
+
+        
+          
+      
+       
+       };
 
     return (
         <div>
             <h2 className="text-3xl my-5 font-bold text-center">Register your account</h2>
+            {
+              error ? <p className="text-center text-red-400">{error}</p> : ""
+            }
+            
             <form onSubmit={handleRegister} className="md:w-3/4 lg:w-1/2 mx-auto">
         <div className="form-control">
           <label className="label">
