@@ -1,6 +1,6 @@
 # Educational and Training Events
 
-# live link : 
+# live link: https://react-event-management-a-8bbdb.web.app/
 
 => User Authentication: The website provides user authentication using Firebase, allowing users to register and log in securely. This feature ensures that only authorized users can access certain parts of the website.
 => Event Listing: Users can view a list of educational and training events on the homepage. The events are displayed in a visually appealing grid layout with images, titles, descriptions, and prices.
