@@ -11,6 +11,7 @@ As a result, the addition operation results in NaN.
 3. 
 Answer : A => We start with an array called food containing four emojis , Next, we create an object called info with a property named favoriteFood. Initially, info.favoriteFood which is the first emoji in the food array.
 Then, we change info.favoriteFood but this change doesn't affect the original food array. When we print the food array using console.log(food)
+
 4. 
 Answer : B => In the sayHi function there is a parameter name, which is used to construct the greeting. 
 However when you call sayHi() without providing an argument, the name parameter is undefined. Therefore the greeting becomes Hi there undefined and that what will be logged to the console.
